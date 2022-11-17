@@ -11,5 +11,4 @@ public class Node {
         right = null;
         left = null;
     }
-
 }

@@ -5,7 +5,6 @@ public class Main {
         Tree tree = new Tree();
         tree.createBinaryTree();
         tree.printTree();
-        System.out.println('s');
     }
 
 }

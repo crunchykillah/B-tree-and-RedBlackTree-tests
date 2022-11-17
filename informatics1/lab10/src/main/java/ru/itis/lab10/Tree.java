@@ -5,18 +5,16 @@ public class Tree {
     public void add(int a){
         root = addToTree(root,a);
     }
-    public Tree createBinaryTree() {
-        Tree bt = new Tree();
+    public void createBinaryTree() {
 
-        bt.add(1);
-        bt.add(2);
-        bt.add(3);
-        bt.add(4);
-        bt.add(5);
-        bt.add(6);
-        bt.add(7);
+        add(1);
+        add(2);
+        add(3);
+        add(4);
+        add(5);
+        add(6);
+        add(7);
 
-        return bt;
     }
     public Node addToTree(Node current, int a){
         if (current == null){
@@ -44,5 +42,4 @@ public class Tree {
     public void printTree(){
         printNode(root);
     }
-
 }
