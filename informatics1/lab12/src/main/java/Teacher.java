@@ -14,7 +14,7 @@ public class Teacher extends Person {
     }
 
     public String[] getCources() {
-        return new String[]{Arrays.toString(cources)};
+        return cources;
     }
 
     public void setCources(String[] cources) {

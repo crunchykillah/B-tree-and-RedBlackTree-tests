@@ -11,10 +11,9 @@ public class HTMLTeacherWriter extends HTMLPersonWriter{
     }
     protected void printAddedInfo(FileWriter writer) throws IOException {
         writer.write("<div>" + teacher.getPosition() + "</div>\n");
-        writer.write("<div>" + Arrays.toString(teacher.getCources()) + "</div>\n");
+        for (int i = 0; i < teacher.getCources().length; ++i){
+            writer.write("<div>" + teacher.getCources()[i] + "</div>\n");
+        }
     }
-
-
-
 
 }
